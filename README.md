@@ -1,5 +1,4 @@
 # Research-on-Cross-Domain-Robust-Recognition-and-Lightweight-Model-of-Chinese-Sign-Language
-# Continuous Sign Language Recognition with RGB, Skeleton, and Cross‑Modal Alignment
 
 ## 1. Project Overview
 
