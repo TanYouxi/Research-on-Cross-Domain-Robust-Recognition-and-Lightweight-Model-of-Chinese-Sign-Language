@@ -1,0 +1,620 @@
+
+---
+ID: dev-00001
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00001.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00002
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00002.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00003
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00003.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00004
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00004.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00005
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00005.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00006
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00006.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00007
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00007.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00008
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00008.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00009
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00009.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00010
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00010.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00001
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00001.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00002
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00002.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00003
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00003.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00004
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00004.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00005
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00005.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00006
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00006.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00007
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00007.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00008
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00008.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00009
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00009.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00010
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00010.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00001
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00001.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00002
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00002.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00003
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00003.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00004
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00004.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00005
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00005.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00006
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00006.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00007
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00007.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00008
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00008.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00009
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00009.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00010
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00010.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00001
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00001.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00002
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00002.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00003
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00003.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00004
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00004.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00005
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00005.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00006
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00006.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00007
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00007.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00008
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00008.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00009
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00009.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00010
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00010.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 234, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist: D:\手语\.venv\lib\site-packages\mediapipe/modules/holistic_landmark/holistic_landmark_cpu.binarypb
+
+---
+ID: dev-00001
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00001.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 271, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist.
+
+---
+ID: dev-00002
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00002.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 271, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist.
+
+---
+ID: dev-00003
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00003.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 271, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist.
+
+---
+ID: dev-00004
+VIDEO: E:\CE-CSL\CE-CSL\video\dev\A\dev-00004.mp4
+Traceback (most recent call last):
+  File "D:\手语\extract_skeleton_mediapipe.py", line 182, in run_split
+    rep = extract_one_video_holistic(
+  File "D:\手语\extract_skeleton_mediapipe.py", line 69, in extract_one_video_holistic
+    with mp_holistic.Holistic(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solutions\holistic.py", line 114, in __init__
+    super().__init__(
+  File "D:\手语\.venv\lib\site-packages\mediapipe\python\solution_base.py", line 271, in __init__
+    validated_graph.initialize(
+FileNotFoundError: The path does not exist.
+
+---
+ID: dev-00005
+VIDEO: E:\CE-CSL\C(�                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (�                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

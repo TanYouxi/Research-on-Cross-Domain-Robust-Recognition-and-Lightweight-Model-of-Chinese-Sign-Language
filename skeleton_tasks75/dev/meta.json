@@ -1,0 +1,23 @@
+{
+  "manifest": "E:\\CE-CSL\\CE-CSL\\manifests\\dev.jsonl",
+  "out_dir": "E:\\CE-CSL\\CE-CSL\\skeleton_tasks75\\dev",
+  "J": 75,
+  "C": 3,
+  "dtype": "float16",
+  "resize_hw": [
+    640,
+    360
+  ],
+  "frame_stride": 1,
+  "max_frames": null,
+  "limit": null,
+  "total_in_manifest": 515,
+  "total_considered": 515,
+  "skipped": 10,
+  "processed": 505,
+  "failures": 0,
+  "total_frames_processed": 93834,
+  "total_seconds": 5394.293113708496,
+  "avg_fps_effective": 17.395050291490467,
+  "notes": "MediaPipe Tasks: pose(33)+hands(21*2) => [F,75,3]."
+}

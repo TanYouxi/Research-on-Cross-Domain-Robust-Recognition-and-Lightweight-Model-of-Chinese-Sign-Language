@@ -1,0 +1,50 @@
+ID: test-00249
+Video: E:\CE-CSL\CE-CSL\video\test\E\test-00249.mp4
+Gloss(6): 我 喜欢 饼干 西红柿 品尝 。
+Sentence: 我很喜欢番茄味的饼干。
+------------------------------------------------------------
+ID: test-00418
+Video: E:\CE-CSL\CE-CSL\video\test\J\test-00418.mp4
+Gloss(6): 这里 玩具 我 男孩 合适1 。
+Sentence: 这个玩具很适合我儿子。
+------------------------------------------------------------
+ID: test-00036
+Video: E:\CE-CSL\CE-CSL\video\test\A\test-00036.mp4
+Gloss(12): 你 什么 时间 出差 ？ 那 时间 我 去 接受 你 。
+Sentence: 你什么时候出差？到时我接你。
+------------------------------------------------------------
+ID: test-00390
+Video: E:\CE-CSL\CE-CSL\video\test\J\test-00390.mp4
+Gloss(6): 你 发票 帮助 打折 可以 。
+Sentence: 这个发票可以帮你打折。
+------------------------------------------------------------
+ID: test-00273
+Video: E:\CE-CSL\CE-CSL\video\test\F\test-00273.mp4
+Gloss(5): 昨天 我 买 裤子 。
+Sentence: 我昨天才买的裤子。
+------------------------------------------------------------
+ID: test-00393
+Video: E:\CE-CSL\CE-CSL\video\test\J\test-00393.mp4
+Gloss(7): 这里 商品 卖 核心 什么 没有2 。
+Sentence: 这个商品没什么卖点。
+------------------------------------------------------------
+ID: test-00065
+Video: E:\CE-CSL\CE-CSL\video\test\B\test-00065.mp4
+Gloss(6): 你 对待 价值 要求 有 ？
+Sentence: 你对价值有要求吗？
+------------------------------------------------------------
+ID: test-00066
+Video: E:\CE-CSL\CE-CSL\video\test\B\test-00066.mp4
+Gloss(7): 你 对待 身体 样子 要求 有 ？
+Sentence: 你对身材有什么需求？
+------------------------------------------------------------
+ID: test-00338
+Video: E:\CE-CSL\CE-CSL\video\test\G\test-00338.mp4
+Gloss(7): 明天 雨 运动 开会 举行 不能1 。
+Sentence: 明天要下雨运动会不能举行了。
+------------------------------------------------------------
+ID: test-00244
+Video: E:\CE-CSL\CE-CSL\video\test\E\test-00244.mp4
+Gloss(6): 我 喜欢 中午 喝 牛奶 。
+Sentence: 我很喜欢在中午喝牛奶。
+------------------------------------------------------------

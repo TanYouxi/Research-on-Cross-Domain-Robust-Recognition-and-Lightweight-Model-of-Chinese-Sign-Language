@@ -1,0 +1,50 @@
+ID: train-02402
+Video: E:\CE-CSL\CE-CSL\video\train\E\train-02402.mp4
+Gloss(7): 我们 坐 车 哪个 站台 停 ？
+Sentence: 我们坐的那趟车停在哪个站台？
+------------------------------------------------------------
+ID: train-02963
+Video: E:\CE-CSL\CE-CSL\video\train\F\train-02963.mp4
+Gloss(7): 那 公司 生意 再 我 拒绝 。
+Sentence: 我拒绝再度和那家公司做生意。
+------------------------------------------------------------
+ID: train-04730
+Video: E:\CE-CSL\CE-CSL\video\train\L\train-04730.mp4
+Gloss(6): 这 事2 发生 再 不会 。
+Sentence: 这种事不会再发生了。
+------------------------------------------------------------
+ID: train-01576
+Video: E:\CE-CSL\CE-CSL\video\train\D\train-01576.mp4
+Gloss(4): 周围 环境 怎么样 ？
+Sentence: 周围环境怎么样？
+------------------------------------------------------------
+ID: train-00570
+Video: E:\CE-CSL\CE-CSL\video\train\B\train-00570.mp4
+Gloss(4): 你们 做 什么 ？
+Sentence: 你们干嘛？
+------------------------------------------------------------
+ID: train-00376
+Video: E:\CE-CSL\CE-CSL\video\train\A\train-00376.mp4
+Gloss(4): 他 结婚 完了 。
+Sentence: 他已经结婚了。
+------------------------------------------------------------
+ID: train-01867
+Video: E:\CE-CSL\CE-CSL\video\train\D\train-01867.mp4
+Gloss(7): 它 远 建议 你 公交 出租车 。
+Sentence: 它离这里比较远，我建议你乘公共汽车或出租车。
+------------------------------------------------------------
+ID: train-02371
+Video: E:\CE-CSL\CE-CSL\video\train\E\train-02371.mp4
+Gloss(5): 我们 去 唱 卡拉OK 。
+Sentence: 我们去唱卡拉OK吧。
+------------------------------------------------------------
+ID: train-00654
+Video: E:\CE-CSL\CE-CSL\video\train\B\train-00654.mp4
+Gloss(6): 帮助（我） 网 上 检查 可以 ？
+Sentence: 你可以帮我在网上搜索一下吗？
+------------------------------------------------------------
+ID: train-01908
+Video: E:\CE-CSL\CE-CSL\video\train\D\train-01908.mp4
+Gloss(8): 对 未来 婚姻 家庭 回忆 考虑 有 ？
+Sentence: 对于未来的婚姻家庭有什么设想和考虑吗？
+------------------------------------------------------------
