@@ -69,7 +69,7 @@ Recommended environment:
 ### Dataset Used
 
 Experiments are conducted using the **CE‑CSL Chinese Continuous Sign
-Language dataset**.
+Language dataset**. https://github.com/woshisad159/TFNet
 
 Dataset statistics:
 
