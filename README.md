@@ -84,7 +84,7 @@ These screenshots are stored in:
     │   ├── manifest.py
     │   ├── generate_final_manifest_with_valid_skeleton.py
     │   ├── gloss_map.py
-    │   ├── extract_skeleton_mediapipe.py
+    │   ├── extract_skeleton_tasks75_final.py
     │   └── sanity_check.py
     │
     ├── manifests/
@@ -211,7 +211,7 @@ Example output:
 
 ## Step 4 --- Extract Skeleton Features
 
-    python extract_skeleton_mediapipe.py
+    python extract_skeleton_tasks75_final.py
 
 Each frame produces:
 
