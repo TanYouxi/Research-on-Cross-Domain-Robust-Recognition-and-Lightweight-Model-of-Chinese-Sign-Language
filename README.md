@@ -67,15 +67,6 @@ These screenshots are stored in:
 
     results/
 
-### 5. GitHub Repository
-
-A public GitHub repository link is provided in:
-
-    github_link.txt
-
-This file contains the full repository URL for verification and
-reproducibility.
-
 ------------------------------------------------------------------------
 
 # 3. Project Structure
