@@ -232,6 +232,18 @@ Saved format:
     [F, 75, 3]
 
 ------------------------------------------------------------------------
+## Step 5 --- Filter Invalid Skeleton Samples
+
+    python generate_final_manifest_with_valid_skeleton.py
+
+Delete the samples where skeleton extraction failed
+Only retain the valid skeleton data
+
+output:
+
+    train_final.jsonl
+    dev_final.jsonl
+    test_final.jsonl
 
 # 7. Model Training
 
