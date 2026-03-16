@@ -44,7 +44,7 @@ All source code required to reproduce the experiments:
     manifest.py
     generate_final_manifest_with_valid_skeleton.py
     gloss_map.py
-    extract_skeleton_mediapipe.py
+    extract_skeleton_tasks75_final.py
     sanity_check.py
 
 ### 3. Dataset
