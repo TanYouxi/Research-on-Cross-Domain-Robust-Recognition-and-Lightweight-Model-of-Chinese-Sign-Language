@@ -1,320 +1,532 @@
-# Research-on-Cross-Domain-Robust-Recognition-and-Lightweight-Model-of-Chinese-Sign-Language
+# Research on Lightweight Chinese Continuous Sign Language Recognition with Semantic Alignment
 
 ## 1. Project Overview
 
-This project implements a **Continuous Sign Language Recognition
-(CSLR)** system using deep learning.\
-The goal is to recognize **gloss sequences from sign language videos**
-using multi-modal learning.
+This repository contains the implementation code for the thesis:
 
-The system is evaluated on the **CE-CSL Chinese Continuous Sign Language
-dataset**.
+**Research on Lightweight Chinese Continuous Sign Language Recognition with Semantic Alignment**
 
-The project explores progressively more advanced architectures:
+The project implements a **Chinese Continuous Sign Language Recognition (CSLR)** system that predicts gloss sequences from sign language videos. The main purpose of the study is to explore a lightweight and deployment-oriented CSLR framework by combining:
 
-  Model       Description
-  ----------- ------------------------------------------
-  **M0**      RGB baseline (MobileNetV3 + TCN + CTC)
-  **M1**      RGB + Skeleton fusion
-  **M2**      RGB + Skeleton with Perception Alignment
-  **M3**      RGB + Skeleton + CLIP Semantic Alignment
-  **M3+KF**   M3 with Keyframe Sampling
+- a lightweight RGB visual front-end,
+- RGB and skeleton multimodal fusion,
+- perception alignment between RGB and skeleton features,
+- CLIP-derived semantic alignment between visual features and gloss-level text semantics,
+- and keyframe sampling as an efficiency-oriented extension.
 
-Each stage evaluates the contribution of additional modalities or
-alignment strategies.
+The experiments are conducted on the **CE-CSL / CE-CNSL Chinese Continuous Sign Language dataset**, which contains continuous sign language videos collected under complex real-world environments.
 
-------------------------------------------------------------------------
+The project follows a staged experimental design. Each model variant adds one major component so that the contribution of each module can be evaluated clearly.
 
-# 2. Submission Contents
+| Model Variant | Description | Main Purpose |
+|---|---|---|
+| **RGB-baseline** | RGB-only recognition model based on MobileNetV3, TCN, and CTC | Establish the lightweight visual baseline |
+| **RGB-Skeleton Fusion** | RGB branch combined with ST-GCN skeleton branch | Verify the contribution of skeleton modality |
+| **Perception-Aligned Fusion** | RGB-Skeleton Fusion with cross-modal perception alignment | Verify the role of perception-level alignment between RGB and skeleton features |
+| **Semantic-Aligned Fusion** | Perception-Aligned Fusion with CLIP-derived semantic alignment | Final semantic-aligned model for gloss sequence recognition |
+| **Semantic-Aligned Fusion+KF** | Semantic-Aligned Fusion with skeleton-motion keyframe sampling | Analyze the efficiency-performance trade-off of keyframe sampling |
 
-The submitted **ZIP folder** contains the following:
+> Note: Some script filenames still contain internal stage identifiers such as `m0`, `m1`, `m2`, and `m3`. These are retained only for code organization and experiment tracking. In the thesis and this README, the model variants are referred to by their formal names: **RGB-baseline**, **RGB-Skeleton Fusion**, **Perception-Aligned Fusion**, **Semantic-Aligned Fusion**, and **Semantic-Aligned Fusion+KF**.
 
-### 1. Complete Implementation Code
+---
 
-All source code required to reproduce the experiments:
+## 2. Submission Contents
 
-    train_m0_rgb_ctc_autodl_earlystop.py
-    train_m1_rgb_skeleton_ctc_autodl_stgcn.py
-    train_m2_rgb_skeleton_align_ctc_autodl_stgcn.py
-    train_m3_rgb_skeleton_clip_ctc_autodl_stgcn_offline.py
-    train_m3_kf_rgb_skeleton_clip_ctc_autodl_stgcn_offline.py
+The submitted project folder contains the following categories of code.
 
-### 2. Data Processing Scripts
+### 2.1 Model Training Scripts
 
-    manifest.py
-    generate_final_manifest_with_valid_skeleton.py
-    gloss_map.py
-    extract_skeleton_tasks75_final.py
-    sanity_check.py
+These scripts train the staged CSLR model variants used in the thesis experiments.
 
-### 3. Dataset
+```text
+train_m0_rgb_ctc_autodl_earlystop.py                         # RGB-baseline
+train_m1_rgb_skeleton_ctc_autodl_stgcn.py                    # RGB-Skeleton Fusion
+train_m2_rgb_skeleton_align_ctc_autodl_stgcn.py              # Perception-Aligned Fusion
+train_m3_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py  # Semantic-Aligned Fusion
+train_m3_kf_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py # Semantic-Aligned Fusion+KF
+```
 
-Due to dataset size limitations, the dataset is **not included in the
-zip file**.
+### 2.2 Data Preparation Scripts
 
-Instructions for accessing the dataset are provided below.
+These scripts are used to build manifests, generate the gloss vocabulary, extract skeleton keypoints, and filter invalid samples.
 
-### 4. Experimental Results
+```text
+manifest.py
+gloss_map.py
+sanity_check.py
+extract_skeleton_tasks75_final.py
+generate_final_manifest_with_valid_skeleton.py
+```
 
-Screenshots documenting key results including:
+### 2.3 CLIP Semantic Cache Script
 
--   training logs
--   model comparison tables
--   WER results
--   GPU usage
+This script generates the offline CLIP text embedding cache required by **Semantic-Aligned Fusion** and **Semantic-Aligned Fusion+KF**.
 
-These screenshots are stored in:
+```text
+build_clip_text_cache.py
+```
 
-    results/
+Default output:
 
-------------------------------------------------------------------------
+```text
+/root/autodl-tmp/CE-CSL/clip_text_cache/clip_text_cache_all.pt
+```
 
-# 3. Project Structure
+### 2.4 Evaluation and Analysis Scripts
 
-    project/
-    │
-    ├── training scripts
-    │   ├── train_m0_rgb_ctc_autodl_earlystop.py
-    │   ├── train_m1_rgb_skeleton_ctc_autodl_stgcn.py
-    │   ├── train_m2_rgb_skeleton_align_ctc_autodl_stgcn.py
-    │   ├── train_m3_rgb_skeleton_clip_ctc_autodl_stgcn_offline.py
-    │   └── train_m3_kf_rgb_skeleton_clip_ctc_autodl_stgcn_offline.py
-    │
-    ├── preprocessing
-    │   ├── manifest.py
-    │   ├── generate_final_manifest_with_valid_skeleton.py
-    │   ├── gloss_map.py
-    │   ├── extract_skeleton_tasks75_final.py
-    │   └── sanity_check.py
-    │
-    ├── manifests/
-    │   ├── train.jsonl
-    │   ├── dev.jsonl
-    │   └── test.jsonl
-    │
-    ├── skeleton_tasks75/
-    │   └── skeleton keypoints
-    │
-    ├── experiments/
-    │   └── saved checkpoints
-    │
-    ├── results/
-    │   └── experiment screenshots
-    │
-    ├── github_link.txt
-    │
-    └── README.md
+These scripts are used for accuracy-efficiency profiling and qualitative failure case analysis.
 
-------------------------------------------------------------------------
+```text
+profile_accuracy_efficiency_final_vs_kf_batch10.py
+export_kf_failure_cases.py
+```
 
-# 4. Environment Setup
+The profiling script generates the accuracy-efficiency comparison table for **Semantic-Aligned Fusion** and **Semantic-Aligned Fusion+KF**. It reports information such as parameters, FLOPs, inference time, GPU memory, and training time.
 
-## Python Version
+The failure-case script exports sample-level predictions from **Semantic-Aligned Fusion** and **Semantic-Aligned Fusion+KF** and identifies cases where keyframe sampling produces worse predictions.
+
+### 2.5 Dataset and Checkpoints
+
+Due to file size limitations, the dataset and trained checkpoints are **not included** in the submitted ZIP file. The code assumes that the CE-CSL dataset and checkpoints are placed in the expected AutoDL directory structure, or that the paths in the script configuration are manually updated.
+
+---
+
+## 3. Recommended Project Structure
+
+A recommended folder structure is shown below.
+
+```text
+project/
+│
+├── training/
+│   ├── train_m0_rgb_ctc_autodl_earlystop.py
+│   ├── train_m1_rgb_skeleton_ctc_autodl_stgcn.py
+│   ├── train_m2_rgb_skeleton_align_ctc_autodl_stgcn.py
+│   ├── train_m3_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py
+│   └── train_m3_kf_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py
+│
+├── preprocessing/
+│   ├── manifest.py
+│   ├── gloss_map.py
+│   ├── sanity_check.py
+│   ├── extract_skeleton_tasks75_final.py
+│   └── generate_final_manifest_with_valid_skeleton.py
+│
+├── semantic_cache/
+│   └── build_clip_text_cache.py
+│
+├── evaluation/
+│   ├── profile_accuracy_efficiency_final_vs_kf_batch10.py
+│   └── export_kf_failure_cases.py
+│
+├── manifests/
+│   ├── train.jsonl
+│   ├── dev.jsonl
+│   ├── test.jsonl
+│   ├── train_final.jsonl
+│   ├── dev_final.jsonl
+│   └── test_final.jsonl
+│
+├── skeleton_tasks75/
+│   ├── train/
+│   ├── dev/
+│   └── test/
+│
+├── clip_text_cache/
+│   └── clip_text_cache_all.pt
+│
+├── experiments/
+│   └── saved checkpoints
+│
+├── results/
+│   └── result screenshots, CSV files, and LaTeX tables
+│
+└── README.md
+```
+
+The scripts can also be placed in the same AutoDL working directory. In that case, make sure the paths in each script are consistent.
+
+---
+
+## 4. Environment Setup
+
+### 4.1 Python Version
 
 Python **3.9+** is recommended.
 
-------------------------------------------------------------------------
+### 4.2 Main Dependencies
 
-## Install Dependencies
+Recommended installation commands:
 
-    pip install torch torchvision torchaudio
-    pip install numpy
-    pip install opencv-python
-    pip install mediapipe
-    pip install openai-clip
+```bash
+pip install torch torchvision torchaudio
+pip install numpy pandas opencv-python mediapipe
+pip install thop
+```
 
-Recommended environment:
+For CLIP text embedding generation, install at least one of the following options depending on the backend used in the semantic-aligned scripts:
 
-    CUDA >= 11
-    PyTorch GPU version
+```bash
+pip install open_clip_torch
+```
 
-------------------------------------------------------------------------
+or
 
-# 5. Dataset
+```bash
+pip install transformers
+```
 
-## CE-CSL Dataset
+Recommended hardware environment:
 
-Experiments are conducted using the **Chinese Continuous Sign Language
-Dataset (CE-CSL)**.
+```text
+CUDA-enabled GPU
+PyTorch GPU version
+AutoDL or another Linux-based training environment
+```
 
-Dataset repository:
+The default dataset root used in the scripts is:
 
+```text
+/root/autodl-tmp/CE-CSL
+```
+
+It can also be overridden by setting the environment variable:
+
+```bash
+export CECSL_ROOT=/path/to/CE-CSL
+```
+
+---
+
+## 5. Dataset
+
+The experiments are conducted on the **CE-CSL / CE-CNSL Chinese Continuous Sign Language dataset**.
+
+Dataset source:
+
+```text
 https://github.com/woshisad159/TFNet
+```
 
-Dataset statistics:
+Dataset split used in this project:
 
-  Split   Samples
-  ------- ---------
-  Train   4973
-  Dev     515
-  Test    500
-
-Video properties:
-
--   Format: MP4
--   Frame length: 30--530 frames
--   Diverse real-world backgrounds
+| Split | Samples |
+|---|---:|
+| Train | 4,973 |
+| Dev | 515 |
+| Test | 500 |
 
 Each sample contains:
 
-    video
-    gloss sequence
-    Chinese sentence
-    signer ID
+```text
+video path
+gloss sequence
+Chinese sentence
+signer information
+other annotation information
+```
 
-Example gloss:
+The gloss sequence is used as the target output for CSLR. The primary evaluation metric is **Word Error Rate (WER)**.
 
-    10 / 年 / 鱼 / 禁止1 / 区 / 时间 / 长 / 不
+---
 
-------------------------------------------------------------------------
+## 6. Data Preprocessing Pipeline
 
-# 6. Data Preprocessing
+### Step 1: Generate Dataset Manifest
 
-## Step 1 --- Generate Dataset Manifest
+```bash
+python manifest.py
+```
 
-    python manifest.py
+Expected outputs:
 
-Outputs:
+```text
+manifests/train.jsonl
+manifests/dev.jsonl
+manifests/test.jsonl
+```
 
-    manifests/train.jsonl
-    manifests/dev.jsonl
-    manifests/test.jsonl
+The manifest records the sample ID, split, video path, signer ID, gloss sequence, Chinese sentence, translator, and notes.
 
-------------------------------------------------------------------------
+### Step 2: Run Sanity Check
 
-## Step 2 --- Dataset Sanity Check
+```bash
+python sanity_check.py
+```
 
-    python sanity_check.py
+This script checks basic dataset information, including:
 
-Checks:
+- gloss length distribution,
+- vocabulary statistics,
+- sampled video readability,
+- frame count distribution,
+- possible abnormal samples.
 
--   corrupted videos
--   frame distribution
--   gloss distribution
+### Step 3: Build Gloss Vocabulary
 
-------------------------------------------------------------------------
+```bash
+python gloss_map.py
+```
 
-## Step 3 --- Build Gloss Vocabulary
+This script builds the gloss vocabulary from the training split and saves it as:
 
-    python gloss_map.py
+```text
+gloss_vocab.json
+```
 
-Example output:
+The vocabulary is used by the CTC-based recognition models.
 
-    {
-    "<blank>":0,
-    "禁止":1,
-    "鱼":2,
-    "区域":3
-    }
+### Step 4: Extract Skeleton Keypoints
 
-------------------------------------------------------------------------
+```bash
+python extract_skeleton_tasks75_final.py
+```
 
-## Step 4 --- Extract Skeleton Features
+This script extracts 75 skeleton keypoints per frame using MediaPipe Tasks:
 
-    python extract_skeleton_tasks75_final.py
+```text
+33 pose keypoints + 21 left-hand keypoints + 21 right-hand keypoints = 75 keypoints
+```
 
-Each frame produces:
+Each skeleton file is saved as a NumPy array:
 
-    75 keypoints
-    (33 pose + 21 left hand + 21 right hand)
+```text
+[F, 75, 3]
+```
 
-Saved format:
+where `F` is the number of sampled frames, and the three channels represent keypoint coordinates and confidence/presence information.
 
-    [F, 75, 3]
+### Step 5: Filter Invalid Samples
 
-------------------------------------------------------------------------
-## Step 5 --- Filter Invalid Skeleton Samples
+```bash
+python generate_final_manifest_with_valid_skeleton.py
+```
 
-    python generate_final_manifest_with_valid_skeleton.py
+This script removes samples with problems such as:
 
-Delete the samples where skeleton extraction failed
-Only retain the valid skeleton data
+- empty gloss target,
+- unreadable video,
+- invalid frame count,
+- CTC length mismatch,
+- missing or invalid skeleton files,
+- NaN or infinite skeleton values.
 
-output:
+Expected outputs:
 
-    train_final.jsonl
-    dev_final.jsonl
-    test_final.jsonl
+```text
+manifests/train_final.jsonl
+manifests/dev_final.jsonl
+manifests/test_final.jsonl
+```
 
-# 7. Model Training
+### Step 6: Build Offline CLIP Text Cache
 
-Common architecture:
+Before training **Semantic-Aligned Fusion** or **Semantic-Aligned Fusion+KF**, build the offline CLIP text embedding cache:
 
-    MobileNetV3
-       ↓
-    Temporal Convolution Network
-       ↓
-    CTC Loss
+```bash
+python build_clip_text_cache.py
+```
 
-Training configuration:
+Default output:
 
-    Epochs: 55
-    Batch size: 2–10
-    Learning rate: 1e-4
-    Optimizer: AdamW
+```text
+/root/autodl-tmp/CE-CSL/clip_text_cache/clip_text_cache_all.pt
+```
 
-------------------------------------------------------------------------
+This script reads the train/dev/test manifests, converts each gloss sequence into the same `gloss_text` format used during training, encodes the unique gloss texts with CLIP, and saves the resulting text embeddings.
 
-# 8. Training Commands
+This step is required for:
 
-### Train M0
+```text
+train_m3_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py
+train_m3_kf_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py
+```
 
-    python train_m0_rgb_ctc_autodl_earlystop.py
+---
 
-### Train M1
+## 7. Model Training
 
-    python train_m1_rgb_skeleton_ctc_autodl_stgcn.py
+### 7.1 Common Settings
 
-### Train M2
+The main training settings used in the experiments are:
 
-    python train_m2_rgb_skeleton_align_ctc_autodl_stgcn.py
+```text
+Epochs: 55
+Batch size: 10
+Learning rate: 1e-4
+Optimizer: AdamW
+Image size: 224 × 224
+RGB frame encoder: MobileNetV3-Small
+Skeleton encoder: ST-GCN
+Temporal modeling: TCN
+Sequence loss: CTC loss
+Decoding: CTC greedy decoding
+```
 
-### Train M3
+### 7.2 Training Commands
 
-    python train_m3_rgb_skeleton_clip_ctc_autodl_stgcn_offline.py
+Train **RGB-baseline**:
 
-### Train M3 + Keyframe Sampling
+```bash
+python train_m0_rgb_ctc_autodl_earlystop.py
+```
 
-    python train_m3_kf_rgb_skeleton_clip_ctc_autodl_stgcn_offline.py
+Train **RGB-Skeleton Fusion**:
 
-------------------------------------------------------------------------
+```bash
+python train_m1_rgb_skeleton_ctc_autodl_stgcn.py
+```
 
-# 9. Evaluation
+Train **Perception-Aligned Fusion**:
 
-Primary evaluation metric:
+```bash
+python train_m2_rgb_skeleton_align_ctc_autodl_stgcn.py
+```
 
-### Word Error Rate (WER)
+Build offline CLIP semantic cache before training the semantic-aligned variants:
 
-    WER = (Substitution + Deletion + Insertion) / Reference Words
+```bash
+python build_clip_text_cache.py
+```
 
-Evaluation is conducted on:
+Train **Semantic-Aligned Fusion**:
 
-    Dev set
-    Test set
+```bash
+python train_m3_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py
+```
 
-------------------------------------------------------------------------
+Train **Semantic-Aligned Fusion+KF**:
 
-# 10. Hardware
+```bash
+python train_m3_kf_rgb_skeleton_clip_ctc_autodl_stgcn_offlinecache.py
+```
 
-Experiments were conducted using:
+---
 
-    GPU: NVIDIA RTX 5090
-    CUDA: 12.x
-    RAM: 32GB
-    Framework: PyTorch
+## 8. Evaluation and Analysis
 
-Training time may vary depending on GPU performance.
+### 8.1 Recognition Metric
 
-------------------------------------------------------------------------
+The primary evaluation metric is **Word Error Rate (WER)**:
 
-# 11. Reproducibility
+```text
+WER = (Substitutions + Deletions + Insertions) / Number of Reference Glosses
+```
 
-To reproduce the experiments:
+The experiments evaluate model performance on the dev and test sets.
 
-    1 Install dependencies
-    2 Download CE-CSL dataset
-    3 Run manifest.py
-    4 Run gloss_map.py
-    5 Extract skeleton features
-    6 Train models (M0 → M3 → M3+KF)
-    7 Evaluate using WER
+### 8.2 Accuracy-Efficiency Profiling
+
+To generate the accuracy-efficiency comparison between **Semantic-Aligned Fusion** and **Semantic-Aligned Fusion+KF**, run:
+
+```bash
+python profile_accuracy_efficiency_final_vs_kf_batch10.py
+```
+
+This script profiles:
+
+- parameter count,
+- trainable parameter count,
+- FLOPs per sample,
+- checkpoint size,
+- GPU memory usage,
+- training time per epoch,
+- inference time per sample,
+- inference throughput.
+
+Expected outputs:
+
+```text
+accuracy_efficiency_final_vs_kf_batch10.csv
+accuracy_efficiency_final_vs_kf_batch10.tex
+```
+
+Before running this script, check the following fields inside `MODEL_JOBS`:
+
+```text
+display_name
+checkpoint_path
+test_wer_percent
+train_gpu_memory_mib
+training_time_epoch_min
+```
+
+The display names should be set as:
+
+```text
+Semantic-Aligned Fusion
+Semantic-Aligned Fusion+KF
+```
+
+### 8.3 Keyframe Failure Case Export
+
+To export qualitative failure cases for **Semantic-Aligned Fusion** and **Semantic-Aligned Fusion+KF**, run:
+
+```bash
+python export_kf_failure_cases.py
+```
+
+This script compares sample-level predictions between the final semantic-aligned model and the keyframe-sampling variant. It helps identify cases where keyframe sampling removes useful motion transitions, gloss boundaries, or long-range temporal cues.
+
+Example outputs may include:
+
+```text
+kf_predictions.json
+kf_failure_candidates_top.csv
+suggested_failure_cases_for_paper.csv
+suggested_failure_cases_for_paper.json
+```
+
+---
+
+## 9. Reported Experimental Results
+
+The following values summarize the main reported results in the thesis. The exact values may vary if the models are retrained with different hardware, checkpoints, or random seeds.
+
+| Model Variant | Main Component | Test WER (%) |
+|---|---|---:|
+| RGB-baseline | RGB visual baseline | 75.31 |
+| RGB-Skeleton Fusion | RGB + skeleton multimodal fusion | 74.64 |
+| Perception-Aligned Fusion | RGB-skeleton perception alignment | 73.97 |
+| Semantic-Aligned Fusion | CLIP-derived semantic alignment | 53.30 |
+| Semantic-Aligned Fusion+KF | Keyframe sampling extension | 55.53 |
+
+Efficiency comparison between the final model and the keyframe-sampling variant:
+
+| Model Variant | Frame Strategy | Max Frames | Test WER (%) | Training Time / Epoch | GPU Memory |
+|---|---|---:|---:|---:|---:|
+| Semantic-Aligned Fusion | Stride + frame cap | 96 | 53.30 | 19.71 min | 21,350 MiB |
+| Semantic-Aligned Fusion+KF | Skeleton-motion keyframe sampling | 48 | 55.53 | 16.24 min | 11,316 MiB |
+
+The results show that semantic alignment significantly improves recognition performance, while keyframe sampling reduces computational and memory costs at the expense of a small decrease in test-set recognition accuracy.
+
+---
+
+## 10. Reproducibility Steps
+
+To reproduce the full experimental pipeline:
+
+```text
+1. Install dependencies.
+2. Download and place the CE-CSL dataset under the expected dataset root.
+3. Run manifest.py to generate initial manifests.
+4. Run sanity_check.py to inspect dataset quality.
+5. Run gloss_map.py to build gloss_vocab.json.
+6. Run extract_skeleton_tasks75_final.py to extract skeleton sequences.
+7. Run generate_final_manifest_with_valid_skeleton.py to create final valid manifests.
+8. Run build_clip_text_cache.py to generate offline CLIP text embeddings.
+9. Train RGB-baseline, RGB-Skeleton Fusion, Perception-Aligned Fusion, Semantic-Aligned Fusion, and Semantic-Aligned Fusion+KF using the corresponding training scripts.
+10. Run profile_accuracy_efficiency_final_vs_kf_batch10.py for efficiency profiling.
+11. Run export_kf_failure_cases.py for qualitative keyframe failure analysis.
+```
+
+---
+
+## 11. Important Notes
+
+1. The dataset and trained checkpoints are not included due to size limitations.
+2. The default code paths are designed for the AutoDL environment. If the code is run locally or on another server, update `CECSL_ROOT` or modify the paths in the `CONFIG` dictionaries.
+3. The semantic-aligned scripts require the offline CLIP cache file. If `clip_text_cache_all.pt` is missing, run `build_clip_text_cache.py` first.
+4. The profiling script depends on valid trained checkpoints. If the checkpoint paths are different, update `MODEL_JOBS` before running.
+5. This project focuses on CSLR gloss recognition rather than end-to-end sign language translation.
+6. Keyframe sampling is used as an efficiency-oriented extension. It is not claimed to always improve recognition accuracy.
